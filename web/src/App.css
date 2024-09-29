@@ -1,0 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  background-color: #072F2E;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #017481;
+  /* color: hsl(186, 98%, 95%); */
+  color: #F2F3F4;
+  padding: 1rem;
+}
+.logo{
+  width: 8rem;
+  height: 3rem;
+  border: 1px solid black;
+  margin-left: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.secciones{
+  display: flex;
+  gap: 2rem;
+  margin-right: 2rem;
+}
