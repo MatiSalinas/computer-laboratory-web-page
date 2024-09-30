@@ -3,15 +3,19 @@
   padding: 0;
 }
 html{
-  background-color: #072F2E;
+  background-color: #f1f1f1;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #017481;
-  /* color: hsl(186, 98%, 95%); */
-  color: #F2F3F4;
+  color: #017481;
+  background-color: #f2f3f4;
   padding: 1rem;
 }
 .logo{
@@ -27,4 +31,51 @@ nav{
   display: flex;
   gap: 2rem;
   margin-right: 2rem;
+}
+
+.carousel {
+  overflow: hidden;
+  position: relative;
+}
+.carousel__container {
+  display: flex;
+}
+.carousel__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+  height: 70vh;
+  overflow-y: hidden;
+
+}
+
+.carousel__slide img{
+  width: 100%;
+
+}
+
+.carousel__next, .carousel__prev{
+  all: unset;
+  font-size: 4rem;
+  position: absolute;
+  top:50%;
+  color: #017481;
+  text-shadow:2px 2px 1px #072f2e;
+}
+
+.carousel__next:hover , .carousel__prev:hover{
+  scale: 1.2;
+}
+.carousel__prev{
+
+  left: 1%;
+  
+}
+.carousel__next{
+
+  right: 1%;
+}
+
+.fondo{
+  height: 300vh;
+  width: 100%;
 }
