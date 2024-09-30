@@ -2,8 +2,10 @@
   margin: 0;
   padding: 0;
 }
+/* #070F12, #003B46, #006770, #008C8B, #00A3A9 */
 html{
   background-color: #f1f1f1;
+  width: 100vw;
 }
 .container{
   display: flex;
@@ -75,7 +77,88 @@ nav{
   right: 1%;
 }
 
-.fondo{
-  height: 300vh;
+
+
+.aboutHeader{
   width: 100%;
+  height: 38vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #006770;
+  
+}
+.wrap{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+  gap: 2rem;
+  color: #f2f3f4;
+}
+.aboutTitle{
+  color: #00A3A9;
+  text-shadow:1px 1px 1px hsl(179, 74%, 35%);
+}
+
+.containerAbout{
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutContent{
+  display:flex;
+  position: relative;
+  background-color: #003B46;
+  gap: 1rem;
+  justify-content:center;
+  align-items: center;
+  height: 60vh;
+}
+.wrap1{
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  gap: 1rem;
+  top:-3rem;
+  z-index: 2;
+}
+.mission, .vision{
+  background-color: #f2f3f4;
+  border-radius: 13px;
+  color: #585858;
+  padding: 1rem;
+
+
+}
+
+.mission{
+  margin-left: 1rem;
+  left: 0;
+}
+.vision{
+  margin-right: 1rem;
+  right: 0;
+}
+.mission h2,.vision h2 {
+  text-align: center;
+  color: #00A3A9;
+}
+
+.values{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 4rem;
+  background-color: #f2f3f4;
+  padding: 1rem;
+  border-radius: 13px;
+  color: #585858;
+  width: 80vw;
+}
+.values h2{
+  text-align: center;
+  color: #00A3A9;
 }
