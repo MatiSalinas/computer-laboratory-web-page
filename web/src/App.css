@@ -1,3 +1,5 @@
+@font-face { font-family: 'customFont'; 
+  src: url('/fonts/Poppins.ttf') format('truetype'); font-weight: normal; font-style: normal; }
 *{
   margin: 0;
   padding: 0;
@@ -6,6 +8,7 @@
 html{
   background-color: #f1f1f1;
   width: 100vw;
+  font-family: 'customFont';
 }
 .container{
   display: flex;
@@ -99,8 +102,8 @@ nav{
   color: #f2f3f4;
 }
 .aboutTitle{
-  color: #00A3A9;
-  text-shadow:1px 1px 1px hsl(179, 74%, 35%);
+  color: hsl(182, 100%, 73%);
+  text-shadow:1px 1px 1px hsl(179, 74%, 15%);
 }
 
 .containerAbout{
@@ -115,13 +118,13 @@ nav{
   gap: 1rem;
   justify-content:center;
   align-items: center;
-  height: 60vh;
+  height: 100vh;
 }
 .wrap1{
   display: flex;
   position: absolute;
   justify-content: center;
-  gap: 1rem;
+  gap: 3rem;
   top:-3rem;
   z-index: 2;
 }
@@ -135,11 +138,11 @@ nav{
 }
 
 .mission{
-  margin-left: 1rem;
+  margin-left: 5rem;
   left: 0;
 }
 .vision{
-  margin-right: 1rem;
+  margin-right: 5rem;
   right: 0;
 }
 .mission h2,.vision h2 {
@@ -151,7 +154,7 @@ nav{
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  margin-top: 4rem;
+  margin-top: 8rem;
   background-color: #f2f3f4;
   padding: 1rem;
   border-radius: 13px;
@@ -161,4 +164,68 @@ nav{
 .values h2{
   text-align: center;
   color: #00A3A9;
+}
+
+.news{
+  display: flex;
+  flex-direction: column;
+  height: 200vh;
+  margin-top: 4rem;
+  background-color: #f2f3f4;
+  gap: 6rem;
+  width: 100vw;
+
+}
+
+.newContainer,.newContainer2{
+  display: flex;
+  
+}
+.newContainer2{
+  align-self: end;
+  margin-right: 14rem;
+}
+
+
+.image{
+  border: 1px solid black;
+  height: 40rem;
+  width: 20rem;
+  position: relative;
+  z-index: 0;
+}
+.image2{
+  border: 1px solid black;
+  height: 40rem;
+  width: 20rem;
+  position: relative;
+}
+
+
+
+.new,.new2{
+  position:absolute;
+  border: 1px solid black;
+  width: 40rem;
+  z-index: 1;
+  opacity: 78%;
+  background-color: #008C8B;
+  color: #fefefe;
+  padding: 1rem;
+
+}
+.new{
+  left: 10rem;
+
+}
+.new2{
+  right: 10rem;
+}
+
+.new h2{
+  text-align: center;
+}
+.l{
+  justify-self: end;
+  align-self: end;
 }

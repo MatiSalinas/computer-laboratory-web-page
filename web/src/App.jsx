@@ -1,7 +1,8 @@
 import './App.css'
 import AboutUs from './components/AboutUs'
-import { CarouselImages } from './components/CarouselImages'
+import CarouselImages from './components/CarouselImages'
 import NavBar from './components/NavBar'
+import News from './components/News'
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
         <NavBar></NavBar>
         <CarouselImages></CarouselImages>
         <AboutUs></AboutUs>
+        <News></News>
       </div>
     
   )

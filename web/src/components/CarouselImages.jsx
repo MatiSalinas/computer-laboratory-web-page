@@ -1,9 +1,12 @@
 import React, { useCallback } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 
-export const CarouselImages = () => {
+// TODO mapear las imagenes desde un arreglo
+function CarouselImages() {
+  
   const [emblaRef, emblaApi] = useEmblaCarousel({loop:true})
 
+  //funciones para pasar de imagenes
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev()
   }, [emblaApi])
@@ -31,3 +34,4 @@ export const CarouselImages = () => {
     </div>
   )
 }
+export default CarouselImages
