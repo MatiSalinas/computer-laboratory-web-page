@@ -90,7 +90,7 @@ nav{
   align-items: center;
   flex-direction: column;
   background-color: #006770;
-  
+  margin-bottom: 3rem;
 }
 .wrap{
   display:flex;

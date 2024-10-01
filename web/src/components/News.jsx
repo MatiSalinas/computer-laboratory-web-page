@@ -29,7 +29,7 @@ function News(){
                 </div>
 
                 <div className="newContainer2">
-                <motion.div className="image2" initial={{x:200,opacity:0,}} whileInView={{x:0, opacity:1}} transition={{duration:1}} viewport={{once:true}}>
+                <motion.div className="image2" initial={{x:200,opacity:0,}} whileInView={{x:0, opacity:1}} transition={{duration:1}} >
                         
                                    <motion.div className="new2" ref={refNews2} initial={{y:0}} style={{y:news2Values}} transition={{duration:0.4}}>
                    <h2>Titulo</h2>
