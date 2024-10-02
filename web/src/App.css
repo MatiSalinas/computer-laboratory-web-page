@@ -9,11 +9,13 @@ html{
   background-color: #f1f1f1;
   width: 100vw;
   font-family: 'customFont';
+  overflow-x: hidden;
 }
 .container{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  
 }
 nav{
   display: flex;
@@ -169,7 +171,7 @@ nav{
 .news{
   display: flex;
   flex-direction: column;
-  height: 200vh;
+  height: 160vh;
   margin-top: 4rem;
   background-color: #f2f3f4;
   gap: 6rem;
@@ -228,4 +230,51 @@ nav{
 .l{
   justify-self: end;
   align-self: end;
+}
+/* #070F12, #003B46, #006770, #008C8B, #00A3A9 */
+.faqContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 50vh;
+  background-color: #008C8B;
+  gap: 6rem;
+  width: 100vw;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  
+}
+
+.faqContainer h1{
+  position: absolute;
+  top: 5%;
+  color:#070F12;
+
+}
+
+.question{
+  margin-top: 3rem;
+  padding: .5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: #f2f3f4;
+  border-radius: 12px;
+  width: 40vw;
+  position: relative;
+  
+
+}
+
+.question p {
+  padding: 1rem;
+}
+
+
+.faqArrow{
+  position: absolute;
+  right: 1%;
+  top: 10%;
 }
