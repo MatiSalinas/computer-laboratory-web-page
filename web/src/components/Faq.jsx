@@ -10,7 +10,7 @@ function Faq() {
             overflowY: "hidden"
         },
         open: {
-            maxHeight: "12rem",
+            maxHeight: "15rem",
             transition: { type: "spring" }
         },
         hidden: {
@@ -18,14 +18,14 @@ function Faq() {
         },
         visible: {
             opacity: 1,
-            maxHeight: "12rem",
+            maxHeight: "15rem",
         }
 
     }
     return (
         <motion.div className="faqContainer" initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
-            <h1>Preguntas Frecuentes</h1>
-            <motion.div className='question' variants={questionVariants} animate={isOpen.question1 ? "open" : "closed"} initial="closed" onClick={() => setIsOpen({ ...isOpen, ['question1']: !isOpen['question1'] })} transition={{ duration: 0.5 }}>
+            <h1>PREGUNTAS FRECUENTES</h1>
+            <motion.div className='question' variants={questionVariants} animate={isOpen.question1 ? "open" : "closed"} initial="closed" onClick={() => setIsOpen({ ...isOpen, question1: !isOpen['question1'] })} transition={{ duration: 0.5 }}>
                     <h3>¿Dónde se encuentra el Laboratorio de Computación?</h3> 
                     <motion.div className='faqArrow'
                         variants={{
@@ -43,7 +43,7 @@ function Faq() {
             </motion.div>
 
 
-            <motion.div className='question' variants={questionVariants} animate={isOpen['question2'] ? "open" : "closed"} initial="closed" onClick={() => setIsOpen({ ...isOpen, ['question2']: !isOpen['question2'] })} transition={{ duration: 0.5 }}>
+            <motion.div className='question' variants={questionVariants} animate={isOpen['question2'] ? "open" : "closed"} initial="closed" onClick={() => setIsOpen({ ...isOpen, question2: !isOpen['question2'] })} transition={{ duration: 0.5 }}>
                     <h3>¿Cómo puedo participar en un proyecto de investigación?</h3>
                     <motion.div className='faqArrow'
                             variants={{
@@ -61,7 +61,7 @@ function Faq() {
             </motion.div>
 
 
-            <motion.div className='question' variants={questionVariants} animate={isOpen['question3'] ? "open" : "closed"} initial="closed" onClick={() => setIsOpen({ ...isOpen, ['question3']: !isOpen['question3'] })} transition={{ duration: 0.5 }}>
+            <motion.div className='question' variants={questionVariants} animate={isOpen['question3'] ? "open" : "closed"} initial="closed" onClick={() => setIsOpen({ ...isOpen, question3: !isOpen['question3'] })} transition={{ duration: 0.5 }}>
                 
                     <h3>Que requisitos debo cumplir para unirme a una PPS o PI?</h3>
                     <motion.div className='faqArrow'
@@ -81,7 +81,7 @@ function Faq() {
             </motion.div>
 
 
-            <motion.div className='question' variants={questionVariants} animate={isOpen['question4'] ? "open" : "closed"} initial="closed" onClick={() => setIsOpen({ ...isOpen, ['question4']: !isOpen['question4'] })} transition={{ duration: 0.5 }}>
+            <motion.div className='question' variants={questionVariants} animate={isOpen['question4'] ? "open" : "closed"} initial="closed" onClick={() => setIsOpen({ ...isOpen, question4: !isOpen['question4'] })} transition={{ duration: 0.5 }}>
                     <motion.div className='faqArrow'
                             variants={{
                                 open: { rotate: 180 },

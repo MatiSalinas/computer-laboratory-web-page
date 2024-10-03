@@ -237,7 +237,7 @@ nav{
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  height: 50vh;
+  height: 70vh;
   background-color: #008C8B;
   gap: 6rem;
   width: 100vw;
@@ -278,3 +278,98 @@ nav{
   right: 1%;
   top: 10%;
 }
+.formContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #003B46 ;
+  padding: 2rem;
+}
+form{
+  background-color: #fefefe;
+  display: flex;
+  flex-direction: column;
+  padding: 8rem;
+  gap: 2rem;
+  align-items:flex-start;
+  
+}
+.nameNsurname{
+  display: flex;
+  gap: 2rem;
+}
+.labelForm{
+  display: flex;
+  flex-direction: column;
+}
+.questionBlock{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.questionOptionsBlock{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.radioOption{
+  display: flex;
+  gap: 1rem;
+}
+form h1 {
+  align-self: center;
+  justify-content: center;
+  color: #008C8B;
+}
+
+form button{
+  align-self: center;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+form button {
+  background-color: #008C8B ;
+  color: white;
+}
+
+
+input,
+input::before,
+input::after {
+  box-sizing: border-box;
+}
+.inputForm{
+  font-size: 16px;
+  font-size: max(16px, 1em);
+  font-family: inherit;
+  padding: 0.25em 0.5em;
+  background-color: #fff;
+  border: 2px solid #070F12;
+  border-radius: 4px;
+}
+textarea{
+  background-color: #fff;
+  border: 2px solid #070F12;
+  border-radius: 4px;
+}
+.inputForm:focus, textarea:focus{
+  outline: 2px solid #008C8B;
+  border: 2px solid #008C8B;
+  border-color: #008C8B;
+}
+
+form input:not(textarea) {
+  line-height: 1;
+  height: 2.25rem;
+}
+
