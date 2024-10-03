@@ -99,6 +99,7 @@ function Faq() {
                 </div>
                 <motion.p variants={questionVariants} animate={isOpen.question4 ? "visible" : "hidden"}>Si tienes una idea para una colaboración o un nuevo proyecto, te invitamos a enviarnos una propuesta detallada por correo electrónico. Incluye una descripción del proyecto, tus objetivos y cualquier otro detalle relevante. Nuestro equipo revisará tu propuesta y se pondrá en contacto contigo para discutir posibles pasos a seguir.</motion.p>
             </motion.div>
+            
         </motion.div>
     )
 }

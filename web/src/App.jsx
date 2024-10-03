@@ -5,6 +5,8 @@ import Faq from './components/Faq'
 import FormLab from './components/FormLab'
 import NavBar from './components/NavBar'
 import News from './components/News'
+import MapGoogle from './components/MapGoogle'
+import Contact from './components/Contact'
 
 function App() {
 
@@ -15,7 +17,9 @@ function App() {
         <AboutUs></AboutUs>
         <News></News>
         <Faq></Faq>
+        <MapGoogle></MapGoogle>
         <FormLab></FormLab>
+        <Contact></Contact>
       </div>
     
   )
