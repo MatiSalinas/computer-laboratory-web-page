@@ -24,6 +24,12 @@ function News() {
             hideLeft:{
                 x: -200, opacity: 0
             },
+            appearRight : {
+                x: 0, opacity: 1 
+            },
+            hideRight:{
+                x: 200, opacity: 0
+            },
             new1Initial:{
                 y: 300
             },
@@ -51,10 +57,10 @@ function News() {
                 </motion.div>
             </div>
 
-            {/* <div className="newContainer2">
-                <motion.div className="image2" initial={{ x: 200, opacity: 0, }} whileInView={{ x: 0, opacity: 1 }} transition={{ duration: 1 }} >
+            <div className="newContainer2">
+                <motion.div className="image2" variants={newsVariants} initial='hideRight' whileInView='appearRight' transition={{ duration: 1 }} >
 
-                    <motion.div className="new2"  variants={newsVariants} ref={refNews2} initial={{ y: 0 }} style='new2Scroll' transition={{ duration: 0.4 }}>
+                    <motion.div className="new2"  variants={newsVariants} ref={refNews2} initial={{ y: 0 }} style={(!isMobile) ? {y: news2Values} : {y:0}} transition={{ duration: 0.4 }}>
                         <h2>Titulo</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur debitis animi nostrum cupiditate at?
                             Beatae maiores iusto labore, inventore impedit ipsa quidem pariatur. Aspernatur a quisquam, laudantium ratione maxime perferendis?
@@ -62,7 +68,7 @@ function News() {
                         </p>
                     </motion.div>
                 </motion.div>
-            </div> */}
+            </div>
         </div>
 
     )
