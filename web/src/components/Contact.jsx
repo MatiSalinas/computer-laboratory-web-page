@@ -1,4 +1,5 @@
 function Contact(){
+    //TODO add SVG to each link
     return (
         <div className="contactContainer">
             <div className="infoL">
